@@ -3,94 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Footer Example</title>
-
-  <!-- Tailwind CSS CDN -->
+  <title>Tailwind Footer Challenge</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100">
+<body class="min-h-screen flex flex-col justify-between">
 
-  <!-- ===== FOOTER SECTION ===== -->
-  <footer class="bg-[#659f8f] dark:bg-[#313131] text-gray-900">
-    <!-- Container centers content and applies spacing -->
+  <!-- Footer -->
+  <footer class="bg-[#659f8f] text-gray-800 dark:bg-[#313131]">
     <div class="max-w-6xl mx-auto px-6 py-12">
-
-      <!-- GRID LAYOUT: Newsletter | Quick Links | Technologies -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-        <!-- ===== NEWSLETTER SECTION ===== -->
+      
+      <!-- Grid layout -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        
+        <!-- Newsletter -->
         <div>
-          <h2 class="text-xl font-semibold mb-4 text-gray-900">
-            Subscribe to our newsletter for updates.
-          </h2>
-
-          <!-- Accessible form with input + button -->
-          <form class="flex flex-col sm:flex-row gap-3">
+          <h2 class="text-xl font-semibold mb-4">Subscribe to our newsletter for updates.</h2>
+          <form class="flex flex-col sm:flex-row items-center sm:items-stretch gap-3">
             <label for="email" class="sr-only">Email Address</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="Email Address"
-              required
-              class="flex-1 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#d86943]"
-            />
-            <button
-              type="submit"
-              class="bg-[#d86943] hover:bg-[#b85d38] text-white font-semibold px-6 py-2 rounded-md transition duration-200"
-            >
+            <input id="email" type="email" placeholder="Email Address" required
+              class="w-full sm:w-auto flex-1 px-4 py-2 rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#d86943]" />
+            <button type="submit"
+              class="px-6 py-2 bg-[#d86943] text-white font-medium rounded-md hover:bg-[#e6784f] transition">
               Subscribe
             </button>
           </form>
         </div>
 
-        <!-- ===== QUICK LINKS SECTION ===== -->
+        <!-- Quick Links -->
         <div>
-          <h3 class="text-lg font-semibold mb-3 text-gray-900">Quick Link</h3>
+          <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="hover:underline hover:text-white">Home</a></li>
-            <li><a href="#" class="hover:underline hover:text-white">Who We Are</a></li>
-            <li><a href="#" class="hover:underline hover:text-white">Our Philosophy</a></li>
+            <li><a href="#" class="hover:text-white transition">Home</a></li>
+            <li><a href="#" class="hover:text-white transition">Who We Are</a></li>
+            <li><a href="#" class="hover:text-white transition">Our Philosophy</a></li>
           </ul>
         </div>
 
-        <!-- ===== TECHNOLOGIES SECTION ===== -->
+        <!-- Technologies -->
         <div>
-          <h3 class="text-lg font-semibold mb-3 text-gray-900">Technologies</h3>
+          <h3 class="text-lg font-semibold mb-3">Technologies</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="hover:underline hover:text-white">HTML</a></li>
-            <li><a href="#" class="hover:underline hover:text-white">CSS</a></li>
-            <li><a href="#" class="hover:underline hover:text-white">JavaScript</a></li>
+            <li><a href="#" class="hover:text-white transition">HTML</a></li>
+            <li><a href="#" class="hover:text-white transition">CSS</a></li>
+            <li><a href="#" class="hover:text-white transition">JavaScript</a></li>
           </ul>
         </div>
 
       </div>
 
-      <!-- DIVIDER LINE -->
-      <hr class="my-8 border-[#d86943]" />
+      <!-- Divider -->
+      <hr class="my-10 border-[#d86943]" />
 
-      <!-- BOTTOM FOOTER SECTION -->
-      <div class="flex flex-col sm:flex-row items-center justify-between">
-        <!-- Logo -->
-        <a href="#" aria-label="CodeSpace logo">
-          <img
-            class="w-auto h-7"
-            src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
-            alt="CodeSpace Logo"
-          />
-        </a>
-
-        <!-- Optional: social icons (example placeholders) -->
-        <!--
-        <div class="flex gap-4 mt-4 sm:mt-0">
-          <a href="#" aria-label="Twitter" class="text-white hover:text-gray-300">🐦</a>
-          <a href="#" aria-label="LinkedIn" class="text-white hover:text-gray-300">💼</a>
-          <a href="#" aria-label="Instagram" class="text-white hover:text-gray-300">📸</a>
-        </div>
-        -->
+      <!-- Logo Section -->
+      <div class="flex justify-center lg:justify-start">
+        <img src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
+             alt="CodeSpace Logo" class="w-auto h-8">
       </div>
 
     </div>
   </footer>
 </body>
 </html>
+
